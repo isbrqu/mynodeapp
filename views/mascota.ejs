@@ -1,0 +1,9 @@
+<%- include('template/cabecera', {title: 'Página de inicio'}) %>
+<div class="container">
+    <% if (mascota.length > 0) { %>
+        <% mascota.forEach(item => { %>
+            <p><%= item.name %></p>
+        <% }) %>
+    <% } %>
+</div>
+<%- include('template/footer') %>
